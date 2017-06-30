@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dao.ASIUDataMapper" >
+  <resultMap id="BaseResultMap" type="com.bean.ASIUData" >
+    <id column="dataid" property="dataid" jdbcType="INTEGER" />
+    <result column="urlid" property="urlid" jdbcType="INTEGER" />
+    <result column="urldata" property="urldata" jdbcType="NVARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    dataid, urlid, urldata
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.bean.ASIUDataExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from t_urlData
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_urlData
+    where dataid = #{dataid,jdbcType=INTEGER}
+  </select>
+  
+  
+  
+  <select id="getudatas" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_urlData
+    where urlid = #{urlid,jdbcType=INTEGER}
+  </select>
+  
+  
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_urlData
+    where dataid = #{dataid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.bean.ASIUDataExample" >
+    delete from t_urlData
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.bean.ASIUData" >
+    insert into t_urlData (dataid, urlid, urldata
+      )
+    values (#{dataid,jdbcType=INTEGER}, #{urlid,jdbcType=INTEGER}, #{urldata,jdbcType=NVARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.bean.ASIUData" >
+    insert into t_urlData
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="dataid != null" >
+        dataid,
+      </if>
+      <if test="urlid != null" >
+        urlid,
+      </if>
+      <if test="urldata != null" >
+        urldata,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="dataid != null" >
+        #{dataid,jdbcType=INTEGER},
+      </if>
+      <if test="urlid != null" >
+        #{urlid,jdbcType=INTEGER},
+      </if>
+      <if test="urldata != null" >
+        #{urldata,jdbcType=NVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.bean.ASIUDataExample" resultType="java.lang.Integer" >
+    select count(*) from t_urlData
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update t_urlData
+    <set >
+      <if test="record.dataid != null" >
+        dataid = #{record.dataid,jdbcType=INTEGER},
+      </if>
+      <if test="record.urlid != null" >
+        urlid = #{record.urlid,jdbcType=INTEGER},
+      </if>
+      <if test="record.urldata != null" >
+        urldata = #{record.urldata,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update t_urlData
+    set dataid = #{record.dataid,jdbcType=INTEGER},
+      urlid = #{record.urlid,jdbcType=INTEGER},
+      urldata = #{record.urldata,jdbcType=NVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.bean.ASIUData" >
+    update t_urlData
+    <set >
+      <if test="urlid != null" >
+        urlid = #{urlid,jdbcType=INTEGER},
+      </if>
+      <if test="urldata != null" >
+        urldata = #{urldata,jdbcType=NVARCHAR},
+      </if>
+    </set>
+    where dataid = #{dataid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.bean.ASIUData" >
+    update t_urlData
+    set urlid = #{urlid,jdbcType=INTEGER},
+      urldata = #{urldata,jdbcType=NVARCHAR}
+    where dataid = #{dataid,jdbcType=INTEGER}
+  </update>
+</mapper>

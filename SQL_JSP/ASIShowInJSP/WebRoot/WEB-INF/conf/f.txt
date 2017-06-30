@@ -1,0 +1,6 @@
+		table1
+		c1		c2		c3
+		c1i1	c2i1	c3i1	
+		c1i2	c2i2	c3i2
+		...		...		...
+		coldata

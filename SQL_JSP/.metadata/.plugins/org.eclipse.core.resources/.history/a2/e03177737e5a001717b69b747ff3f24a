@@ -1,0 +1,49 @@
+package com.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.bean.ASIUData;
+import com.bean.ASIUrl;
+import com.dao.ASIUDataMapper;
+import com.dao.ASIUrlMapper;
+@Service
+public class ASIServiceImpl implements IASIService {
+
+	@Autowired
+	private ASIUrlMapper am;
+	@Autowired
+	private ASIUDataMapper adm;
+	
+	@Override
+	public List<List<String>> getData() {
+		// TODO Auto-generated method stub
+		List<ASIUrl> urls = am.geturls();
+		System.out.println("===================");
+			for (int j = 0; j < urls.size(); j++) {
+				System.out.println(urls.get(j).getUrlid());
+			}
+		List<List<String>> datas = new ArrayList<List<String>>();
+		for (int i = 0; i < urls.size(); i++) {
+			List<String> temps = new ArrayList<String>();
+			
+			
+			List<ASIUData> ud = adm.getudatas(urls.get(i).getUrlid());
+			for (int j = 0; j < urls.size(); j++) {
+				System.out.println(ud.get(j).getUrldata());
+			}
+			
+			temps.add(urls.get(i).getUrl());
+			
+			for (ASIUData asiuData : ud) {
+				temps.add(asiuData.getUrldata());
+			}
+			datas.add(temps);
+		}
+		return datas;
+	}
+
+}

@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+tomcat7Server.ASIShowInJSP.IEARProjectName=
+tomcat7Server.ASIShowInJSP.altContextRoot=
+tomcat7Server.ASIShowInJSP.contextRoot=/ASIShowInJSP
+tomcat7Server.ASIShowInJSP.deployIsOverProject=false
+tomcat7Server.ASIShowInJSP.deploymentPath=J\:\\apache-tomcat-7.0.54\\webapps\\ASIShowInJSP
+tomcat7Server.ASIShowInJSP.isDeployed=true
+tomcat7Server.ASIShowInJSP.isExploded=true
+tomcat7Server.ASIShowInJSP.isUptoDate=true
+tomcat7Server.ASIShowInJSP.noFileCopy=false
+tomcat7Server.ASIShowInJSP.shouldBackup=false
+tomcat7Server.ASIShowInJSP.shouldOverwrite=false
+tomcat7Server.ASIShowInJSP.type=WebDeployment

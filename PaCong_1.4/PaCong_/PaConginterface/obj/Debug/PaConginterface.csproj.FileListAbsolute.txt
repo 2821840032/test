@@ -1,0 +1,5 @@
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaConginterface\obj\Debug\PaConginterface.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaConginterface\bin\Debug\PaConginterface.dll
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaConginterface\bin\Debug\PaConginterface.pdb
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaConginterface\obj\Debug\PaConginterface.dll
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaConginterface\obj\Debug\PaConginterface.pdb

@@ -1,0 +1,53 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+table {
+	width: 1200px;
+	height: auto;
+	margin: 0px auto;
+	border: 1px solid grey;
+	text-align: center;
+}
+
+table tr {
+	margin: 5px 0px;
+}
+
+table tr td {
+	border: 1px solid green;
+	margin: 5px;
+	padding: 3px;
+}
+
+form {
+	display: none;
+}
+
+#refresh {
+	width: 100px;
+	height: 65px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: transparent;
+	color: black;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 65px;
+	font-size: 25px;
+}
+
+#refresh:HOVER {
+	background: rgba(10, 10, 10, 0.5);
+	cursor: pointer;
+}
+
+#refresh a {
+	text-decoration: none;
+}
+
+#refresh a:VISITED {
+	color: orange;
+}

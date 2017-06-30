@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.validation.constraints.AssertFalse.List"/>
+<fullyQualifiedTypeName name="com.service.ITableNameService"/>
+<fullyQualifiedTypeName name="com.dao.TableNameDAO"/>
+<fullyQualifiedTypeName name="com.dao.ColDataDAO"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="com.service.ITableDataService"/>
+<fullyQualifiedTypeName name="com.service.ColDataServiceImpl"/>
+<fullyQualifiedTypeName name="org.springframework.beans.TypeConverterSupport"/>
+<fullyQualifiedTypeName name="com.dao.TableColDAO"/>
+<fullyQualifiedTypeName name="com.service.TableNameServiceImpl"/>
+<fullyQualifiedTypeName name="sun.applet.Main"/>
+<fullyQualifiedTypeName name="com.utils.Test"/>
+<fullyQualifiedTypeName name="sun.tools.jar.Main"/>
+<fullyQualifiedTypeName name="com.dao.TableNameMapper"/>
+<fullyQualifiedTypeName name="com.dao.ColDataMapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="com.bean.ColData"/>
+<fullyQualifiedTypeName name="com.service.TableDataServiceImpl"/>
+<fullyQualifiedTypeName name="com.bean.TableData"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.bean.ASIUrl"/>
+<fullyQualifiedTypeName name="com.dao.ASIUrlMapper"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.dao.ASIUDataMapper"/>
+<fullyQualifiedTypeName name="com.bean.ASIUData"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.service.ASIServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

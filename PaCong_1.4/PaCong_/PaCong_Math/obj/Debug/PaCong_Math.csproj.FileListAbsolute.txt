@@ -1,0 +1,14 @@
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaCong_Math.dll
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaCong_Math.pdb
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaConginterface.dll
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaConginterface.pdb
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\obj\Debug\PaCong_Math.csprojResolveAssemblyReference.cache
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\obj\Debug\PaCong_Math.dll
+C:\Users\Administrator.WIN-20160427JSS\Desktop\PaCong_\PaCong_\PaCong_Math\obj\Debug\PaCong_Math.pdb
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaCong_Math.dll
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaCong_Math.pdb
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaConginterface.dll
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\bin\Debug\PaConginterface.pdb
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\obj\Debug\PaCong_Math.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\obj\Debug\PaCong_Math.dll
+C:\Users\Administrator\Desktop\PaCong_\PaCong_\PaCong_Math\obj\Debug\PaCong_Math.pdb

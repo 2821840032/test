@@ -1,0 +1,18 @@
+package com.controller;
+
+@Controller
+public class TableDataController {
+	
+	
+	@RequestMapping("/getdata")
+	public String gettabledata(HttpServletRequest request){
+		return "redirect:showdata.jsp";
+	}
+	
+	
+	@RequestMapping("/test")
+	public ModelAndView test(){
+		ModelAndView mav = new ModelAndView("showdata.jsp");
+		return mav;
+	}
+}

@@ -1,0 +1,14 @@
+package com.utils;
+
+import java.util.List;
+
+import com.bean.TableData;
+
+
+public class Test {
+	
+	public static void f1(){
+		
+	}
+	
+}
